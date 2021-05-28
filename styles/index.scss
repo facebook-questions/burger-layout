@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #fff;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(237, 75, 235, .8) , rgba(43, 21, 62, .8)), url(./../img/burger.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 0;
+}
+#blurEffect{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(5px);
+}
+#heroImage{
+    position: absolute;
+    right: -10rem;
+    top: 50%;
+    transform: translateY(-40%);
+    img{
+        width: 750px;
+    }
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        font-family: "Comfortaa";
+        color: #51224A;
+    }
+    i{
+        font-size: 2rem;
+        cursor: pointer;
+        color: #E0B1C8;
+    }
+}
+main{
+    width: 100%;
+    margin-top: 3rem;
+    #mainTitle{
+        color: #210729;
+        padding-left: 3rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        width: 400px;
+        position: relative;
+        #leftBar{
+            position: absolute;
+            left: 0;
+            width: 1rem;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 1rem;
+        }
+        h3{
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+    }
+    #description{
+        color: #210729;
+        font-size: 1.2rem;
+        padding-left: 3rem;
+        width: 500px;
+        margin-top: 2rem;
+    }
+    #button{
+        width: 100%;
+        padding-left: 3rem;
+        button{
+            margin-top: 2rem;
+            padding: .5rem 1.3rem;
+            font-size: .8rem;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            &:first-of-type{
+                background-color: #633F61;
+                color: #fff;
+            }
+            &:last-of-type{
+                background-color: #E0B1C8;
+                color: #210729;
+                margin-left: 3rem;
+            }
+        }
+    }
+    footer{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding-left: 3rem;
+        padding-bottom: 1rem;
+        .time{
+            display: inline-block;
+            margin-right: 3rem;
+            p{
+                color: #210729;
+                font-weight: 700;
+            }
+        }
+    }
+}
